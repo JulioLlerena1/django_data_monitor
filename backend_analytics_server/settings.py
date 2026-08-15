@@ -132,3 +132,5 @@ MAILERS = {
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, STATIC_URL),
 ]
+
+API_URL = 'https://chripalm.pythonanywhere.com/landing/api/index/'
