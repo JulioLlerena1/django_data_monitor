@@ -118,22 +118,22 @@
               </tr>
             </thead>
             <tbody class="bg-white divide-y dark:divide-gray-700 dark:bg-gray-800">
-
+              {% for fila in posts %}
               <!-- START - respuestas -->
               <tr class="text-gray-700 dark:text-gray-400">
                 <td class="px-4 py-3 text-sm">
                   <!-- START - fila.valor1 -->
-                  fila.valor1
+                  {{fila.id}}
                   <!-- END - fila.valor1 -->
                 </td>
                 <td class="px-4 py-3 text-sm">
                   <!-- START - fila.valor2 -->
-                  fila.valor2
+                  {{fila.title}}
                   <!-- END - fila.valor2 -->
                 </td>
               </tr>
               <!-- END - respuestas -->
-
+              {% endfor %}
             </tbody>
           </table>
         </div>
