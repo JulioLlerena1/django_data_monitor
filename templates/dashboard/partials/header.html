@@ -53,10 +53,10 @@
                         <li class="flex">
                             <!-- START - Block Logout -->
 
-                            <!-- Método post y action para el URL (con el alias 'logout') -->
-                            <form class="w-full">
+                            <form method="post" action="{% url 'logout' %}" class="w-full">
 
-                                <!-- CSRF token -->
+                            <!-- CSRF token -->
+                            {% csrf_token %}
                                 
                                 <button
                                     type="submit"
