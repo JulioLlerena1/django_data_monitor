@@ -10,13 +10,13 @@ from django.contrib.auth.decorators import login_required
 def index(request):
 
     response = requests.get(settings.API_URL)  # URL de la API
-    posts = response.json()  # Convertir la respuesta a JSON
-
-    total_responses = len(posts)
+    users = response.json()  # Convertir la respuesta a JSON
+    size = len(users)  # Convertir la respuesta a JSON
 
     data = {
         'title': "Landing Page' Dashboard",
-        'total_responses': total_responses,
+        'responses': users,
+        'size': size,
     }
 
     return render(request, 'dashboard/index.html', data)
