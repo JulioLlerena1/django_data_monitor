@@ -154,9 +154,7 @@ CSRF_TRUSTED_ORIGINS = [
 
 ]
 
-ALLOWED_HOSTS = [
-  "*",
-]
+ALLOWED_HOSTS = ['.up.railway.app']
 
 # Fallo: acceso sin autenticación
 LOGIN_URL = '/login/'
